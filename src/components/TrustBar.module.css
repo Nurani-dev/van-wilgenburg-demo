@@ -1,0 +1,78 @@
+.trustBar {
+    background-color: var(--bg-primary);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--border-subtle);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.label {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-right: 2rem;
+    border-right: 1px solid var(--border-subtle);
+}
+
+.slider {
+    flex: 1;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.track {
+    display: flex;
+    gap: 5rem;
+    width: max-content;
+}
+
+.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoText {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--border-strong);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    letter-spacing: -0.02em;
+}
+
+.logoText:hover {
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .label {
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .track {
+        gap: 3rem;
+    }
+}

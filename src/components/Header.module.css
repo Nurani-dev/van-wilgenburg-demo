@@ -1,0 +1,52 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    z-index: 100;
+    border-bottom: 1px solid #333;
+    /* Technical border */
+}
+
+.logo {
+    font-family: var(--font-teko), sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--foreground);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: var(--primary);
+    text-shadow: 0 0 10px rgba(255, 95, 31, 0.5);
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    font-family: var(--font-mono), monospace;
+    /* Technical font */
+    color: var(--secondary);
+    font-size: 13px;
+    /* Smaller, technical size */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: var(--primary);
+    text-shadow: 0 0 5px rgba(255, 95, 31, 0.4);
+}

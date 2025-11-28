@@ -1,0 +1,102 @@
+.testimonials {
+    background-color: #111;
+    color: #fff;
+    padding: 8rem 2rem;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-family: var(--font-outfit);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-family: var(--font-inter);
+    font-size: 1.25rem;
+    color: #888;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #333;
+    transition: border-color 0.3s ease;
+}
+
+.card:hover {
+    border-color: #FF4D00;
+}
+
+.quoteMark {
+    font-family: serif;
+    font-size: 5rem;
+    color: #333;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    line-height: 1;
+}
+
+.quote {
+    font-family: var(--font-inter);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    color: #ddd;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #FF4D00;
+    font-family: var(--font-outfit);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-family: var(--font-outfit);
+    font-weight: 700;
+    color: #fff;
+}
+
+.role {
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+    color: #666;
+}

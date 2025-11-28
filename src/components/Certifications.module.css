@@ -1,0 +1,75 @@
+.certifications {
+    background-color: #fff;
+    padding: 6rem 2rem;
+    border-top: 1px solid #eee;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-family: var(--font-outfit);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-family: var(--font-inter);
+    font-size: 1.125rem;
+    color: #666;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #FF4D00;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    background: #fff;
+}
+
+.badgeText {
+    font-family: var(--font-outfit);
+    font-weight: 800;
+    color: #111;
+    font-size: 1.125rem;
+}
+
+.certDesc {
+    font-family: var(--font-inter);
+    color: #444;
+    font-weight: 500;
+}

@@ -1,0 +1,143 @@
+.main {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.hero {
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.infoBlock h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.infoBlock p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.infoBlock a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.infoBlock a:hover {
+    color: var(--accent-primary);
+}
+
+.formSection {
+    background: var(--bg-secondary);
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.label {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.input,
+.textarea {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    padding: 1rem;
+    border-radius: 6px;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submitBtn {
+    background: var(--accent-primary);
+    color: #000;
+    border: none;
+    padding: 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem 2rem;
+    }
+}
