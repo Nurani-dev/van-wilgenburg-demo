@@ -1,5 +1,5 @@
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     padding: 6rem 2rem 2rem;
     display: grid;
@@ -8,6 +8,17 @@
     background: var(--bg-primary);
     position: relative;
     overflow: hidden;
+}
+
+/* ... */
+
+.visualSide {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    max-height: 80vh;
 }
 
 /* Left Side: Typography & Content */
@@ -97,13 +108,7 @@
 }
 
 /* Right Side: Visuals */
-.visualSide {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    height: 100%;
-    min-height: 600px;
-}
+
 
 .heroImage {
     width: 100%;

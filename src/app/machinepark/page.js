@@ -9,11 +9,13 @@ export default function MachineparkPage() {
   const machines = [
     {
       title: "Optimum draaibank",
-      desc: "Wij hebben een conventionele draaibank met een spindeldoorlaat van 58mm, afstand tussen de centers 1000mm met een draaidiameter boven het bed van 420mm."
+      desc: "Wij hebben een conventionele draaibank met een spindeldoorlaat van 58mm, afstand tussen de centers 1000mm met een draaidiameter boven het bed van 420mm.",
+      image: "/optimum-draaibank.png"
     },
     {
       title: "Bimak Kolomboormachine met kruistafel",
-      desc: "Deze machine kan gaten maken tot 40mm, voor grotere gaten kunnen wij op specifieke aanvragen leveren."
+      desc: "Deze machine kan gaten maken tot 40mm, voor grotere gaten kunnen wij op specifieke aanvragen leveren.",
+      image: "/bimak-drill.png"
     },
     {
       title: "TIG lasmachines",
@@ -21,7 +23,8 @@ export default function MachineparkPage() {
       list: [
         "ESAB caddy tig watergekoeld 220A AC/DC (230 volt)",
         "REHM TIGER 170A/DC (230 volt)"
-      ]
+      ],
+      image: "/tig-welder.png"
     },
     {
       title: "Mig/Mag lasmachine",
@@ -30,27 +33,36 @@ export default function MachineparkPage() {
         "Kemppi Pro mig 510 Puls, watergekoeld 400A (380 volt)",
         "Lincoln speedtec 200A (230 volt)"
       ],
-      note: "Met de bovenstaande lasmachines kunnen wij ook elektroden lassen."
+      note: "Met de bovenstaande lasmachines kunnen wij ook elektroden lassen.",
+      image: "/mig-mag-welder.png"
     },
     {
       title: "Plasmasnijder Hypertherm Powermax 65",
       list: [
         "Snij capaciteit maximaal staal 25mm",
         "Staal scheiden 32 mm"
-      ]
+      ],
+      image: "/hypertherm-plasma.png"
     },
     {
       title: "Lintzaagmachine BOMAR ergonomic 320.250 DGS",
-      desc: "Deze zaagmachine zaagt dubbel verstek"
+      desc: "Universele halfautomatische bandzaagmachine voor het nauwkeurig zagen van staal, RVS en non-ferro metalen. Geschikt voor dubbel verstekzagen.",
+      image: "/bomar-saw.png"
     },
     {
-      title: "Eisele afkortzaagmachine met een zaagblad 275mm"
+      title: "Eisele afkortzaagmachine met een zaagblad 275mm",
+      desc: "Professionele cirkelzaagmachine voor het braamvrij zagen van staal en RVS profielen. Voorzien van koelsysteem voor optimale zaagkwaliteit.",
+      image: "/eisele-saw.png"
     },
     {
-      title: "Profielwalsmachine ZOPF 60M"
+      title: "Profielwalsmachine ZOPF 60M",
+      desc: "Krachtige profielwals met 3 aangedreven rollen voor het walsen van diverse profielen, buizen en strippen in zowel horizontale als verticale positie.",
+      image: "/zopf-bender.png"
     },
     {
-      title: "Handbuigmachine"
+      title: "Handbuigmachine",
+      desc: "Voor het nauwkeurig buigen van diverse buisdiameters en profielen. Ideaal voor maatwerk en enkelstuks producties.",
+      image: "/manual-bender.png"
     }
   ];
 
@@ -87,6 +99,9 @@ export default function MachineparkPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
+                style={{
+                  '--bg-image': `url(${machine.image})`
+                }}
               >
                 <h3 className={styles.cardTitle}>{machine.title}</h3>
                 {machine.desc && <p className={styles.cardDesc}>{machine.desc}</p>}

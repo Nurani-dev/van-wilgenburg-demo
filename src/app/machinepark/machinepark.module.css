@@ -43,6 +43,27 @@
     border-radius: 12px;
     padding: 2rem;
     transition: transform 0.2s ease, border-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    z-index: -1;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.card:hover::before {
+    transform: scale(1.05);
 }
 
 .card:hover {
@@ -59,7 +80,7 @@
 }
 
 .cardDesc {
-    color: var(--text-secondary);
+    color: #e0e0e0;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -67,7 +88,7 @@
 .cardList {
     list-style: disc;
     padding-left: 1.5rem;
-    color: var(--text-secondary);
+    color: #e0e0e0;
     margin-bottom: 1rem;
 }
 
@@ -77,7 +98,7 @@
 
 .cardNote {
     font-style: italic;
-    color: var(--text-muted);
+    color: #cccccc;
     font-size: 0.9rem;
 }
 

@@ -44,8 +44,9 @@ export default function Contact() {
                 </motion.form>
 
                 <div className={styles.footer}>
-                    <p>© 2025 Las en Constructiebedrijf van Wilgenburg</p>
-                    <p>KVK: 12345678 • BTW: NL000000000B01</p>
+                    <p>© {new Date().getFullYear()} Las en Constructiebedrijf van Wilgenburg</p>
+                    <p>Nikkelstraat 25D, 8211 AJ Lelystad</p>
+                    <p>Tel: 0652392862 • KvK: 56619642</p>
                 </div>
             </div>
         </section>

@@ -58,10 +58,13 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1, delay: 0.2 }}
             >
-                <img
-                    src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=1997&auto=format&fit=crop"
-                    alt="Industrial Welding Sparks"
+                <video
+                    src="/images/portfolio/speeltoestel/speeltoestel.mp4"
                     className={styles.heroImage}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
                 />
 
                 <div className={styles.overlayCard}>
